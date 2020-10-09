@@ -22,45 +22,57 @@ def main():
 @click.argument('name')
 def t1(name):
     """- Change team 1's name"""
-    f = open(str(team1F), "w")
-    f.write(str(name))
-    f.close()
+    write(str(team1F), name)
 
 
 @click.command()
 @click.argument('score')
 def t1s(score):
     """- Change team 1's score"""
-    f = open(str(team1scoreF), "w")
-    f.write(str(score))
-    f.close()
+    write(str(team1scoreF), score)
 
 
 @click.command()
 @click.argument('name')
 def t2(name):
     """- Change team 2's name"""
-    f = open(str(team2F), "w")
-    f.write(str(name))
-    f.close()
+    write(str(team2F), name)
 
 
 @click.command()
 @click.argument('score')
 def t2s(score):
     """- Change team 2's score"""
-    f = open(str(team2scoreF), "w")
-    f.write(str(score))
-    f.close()
+    write(str(team2scoreF), score)
 
 
 @click.command()
 @click.argument('match')
 def m(match):
     """- Change the match name"""
-    f = open(str(matchN), "w")
-    f.write(str(match))
+    write(str(matchN), match)
+
+
+@click.command()
+def swap():
+    """- Swaps the team name and scores"""
+    team1N = read(team1F)
+    team2N = read(team2F)
+    team1S = read(team1scoreF)
+    team2S = read(team2scoreF)
+
+
+def write(file, string):
+    f = open(str(file), "w")
+    f.write(string)
     f.close()
+
+
+def read(file):
+    f = open(str(file), "r")
+    string = f.read()
+    f.close()
+    return string
 
 
 main.add_command(t1)
