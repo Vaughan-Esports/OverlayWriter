@@ -59,7 +59,7 @@ def t2s(score):
 def m(match):
     """- Change the match name"""
     f = open(str(matchN), "w")
-    f.write(str(matchN))
+    f.write(str(match))
     f.close()
 
 
