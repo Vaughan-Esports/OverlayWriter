@@ -75,6 +75,17 @@ def clear():
     write(team2F, "")
     write(team1scoreF, "")
     write(team2scoreF, "")
+    write(matchN, "")
+
+
+@click.command()
+def get():
+    """- Lists the current texts"""
+    click.echo("Match Name: " + read(matchN))
+    click.echo("Team 1 Name: " + read(team1F))
+    click.echo("Team 1 Score: " + read(team1scoreF))
+    click.echo("Team 2 Name: " + read(team2F))
+    click.echo("Team 2 Score: " + read(team2scoreF))
 
 
 def write(file, string):
@@ -107,6 +118,7 @@ main.add_command(t2s)
 main.add_command(m)
 main.add_command(swap)
 main.add_command(clear)
+main.add_command(get)
 
 if __name__ == '__main__':
     main()
