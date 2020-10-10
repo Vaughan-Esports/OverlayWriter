@@ -7,8 +7,8 @@ setup(
     install_requires=[
         'Click',
     ],
-    entry_points='''
-        [console_scripts]
-        overlay=overlay:cli
-    ''',
+    entry_points={
+        'console_scripts': ['overlay = overlay:main',
+                            'ow = overlay:main']
+    },
 )
