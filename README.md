@@ -10,6 +10,7 @@ To change team 1's name to "The Better Team": `overlay t1 "The Better Team"` or 
 Run `overlay --help` to find these in the command line
 
 -   clear  - Clears all files
+-   get    - Lists the current texts
 -   m      - Change the match name
 -   swap   - Swaps the team name and scores
 -   t1     - Change team 1's name
