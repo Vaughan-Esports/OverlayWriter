@@ -4,10 +4,12 @@ Command line interface to edit text files for OBS/SLOBS overlays.
 Currently designed directly for Vaughan Esports' overlays.
 
 ## Usage
-To change team 1's name to "The Better Team": `overlay t1 "The Better Team"` or `ow t1 "The Better Team"`
+To change team 1's name to "The Better Team":  `ow t1 "The Better Team"`
+
+To use, you must in the install directory of `ow.py`
 
 #### Commands
-Run `overlay --help` to find these in the command line
+Run `ow --help` to find these in the command line
 
 -   clear  - Clears all files
 -   get    - Lists the current texts
