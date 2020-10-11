@@ -1,7 +1,7 @@
 # OverlayWriter
 Command line interface to edit text files for OBS/SLOBS overlays.
 
-Currently designed directly for Vaughan Esports' overlays.
+Currently designed directly for [Vaughan Esports'](https://vaughanesports.org) overlays.
 
 ## Usage
 To change team 1's name to "The Better Team":  `ow t1 "The Better Team"`
