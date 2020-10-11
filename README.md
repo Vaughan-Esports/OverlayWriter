@@ -16,6 +16,8 @@ Currently designed directly for [Vaughan Esports'](https://vaughanesports.org) o
 3. Navigate to the directory in your terminal
 4. Edit your overlay away!
 
+**Tip:** Use the `custom extents` checkbox in the properties of text sources to center the text on your overlay at all times
+
 
 ### Example Usage
 To change team 1's name to "The Better Team":  `ow w t1 "The Better Team"`
