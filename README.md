@@ -12,7 +12,10 @@ Currently designed directly for [Vaughan Esports'](https://vaughanesports.org) o
 ## Using Overlay Writer
 ### Setup
 1. Clone this repo
-2. Navigate to the directory in your terminal
+2. In OBS/SLOBS select the `read from file` option for texts and select the appropriate file under the `textFiles` directory
+3. Navigate to the directory in your terminal
+4. Edit your overlay away!
+
 
 ### Example Usage
 To change team 1's name to "The Better Team":  `ow w t1 "The Better Team"`
