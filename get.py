@@ -43,3 +43,17 @@ def t2s():
 def m():
     """- print the match name"""
     click.echo("Match Name: " + read(matchN))
+
+
+@g.command()
+def teams():
+    """- print both team's names"""
+    click.echo("Team 1 Name: " + read(team1F))
+    click.echo("Team 2 Name: " + read(team2F))
+
+
+@g.command()
+def scores():
+    """- print both team's scores"""
+    click.echo("Team 1 Score: " + read(team1scoreF))
+    click.echo("Team 2 Score: " + read(team2scoreF))
