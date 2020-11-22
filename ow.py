@@ -20,6 +20,6 @@ def cli():
 cli.add_command(get)
 cli.add_command(clear)
 cli.add_command(swap)
-cli.add_command(writer)
+cli.add_command(set)
 
 cli()
