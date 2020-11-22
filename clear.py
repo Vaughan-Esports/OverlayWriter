@@ -1,5 +1,6 @@
 from files import *
-from paths import *
+from config import *
+from rich import print as rprint
 import click
 
 
@@ -13,39 +14,39 @@ def clear(ctx):
         write(team1scoreF, "")
         write(team2scoreF, "")
         write(matchN, "")
-        click.echo('Cleared all files')
+        rprint(f"{main_colour}Cleared all files.")
 
 
 @clear.command()
 def t1():
     """- clear team 1's name"""
     write(team1F, "")
-    click.echo('Cleared team 1\'s name')
+    rprint(f"{main_colour}Cleared team {t1_colour}1\'s {main_colour}name.")
 
 
 @clear.command()
 def t1s():
     """- clear team 1's score"""
     write(team1scoreF, "")
-    click.echo('Cleared team 1\'s score')
+    rprint(f"{main_colour}Cleared team {t1_colour}1\'s {main_colour}score.")
 
 
 @clear.command()
 def t2():
     """- clear team 2's name"""
     write(team2F, "")
-    click.echo('Cleared team 2\' name')
+    rprint(f"{main_colour}Cleared team {t2_colour}2\'s {main_colour}name.")
 
 
 @clear.command()
 def t2s():
     """- clear team 2's score"""
     write(team2scoreF, "")
-    click.echo('Cleared team 2\'s score')
+    rprint(f"{main_colour}Cleared team {t2_colour}2\'s {main_colour}score.")
 
 
 @clear.command()
 def m():
     """- clear match name"""
     write(matchN, "")
-    click.echo('Cleared the match name')
+    rprint(f"{main_colour}Cleared match name.")

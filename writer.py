@@ -1,5 +1,5 @@
 from files import *
-from paths import *
+from config import *
 from rich import print as rprint
 import click
 
@@ -15,7 +15,7 @@ def writer():
 def t1(name):
     """- change team 1's name"""
     write(team1F, " ".join(name))
-    rprint(f"[magenta]Team 1 Name: [green]{read(team1F)}")
+    rprint(f"{main_colour}Team {t1_colour}1 Name: {arg_colour}{read(team1F)}")
 
 
 @writer.command()
@@ -23,7 +23,7 @@ def t1(name):
 def t1s(score):
     """- change team 1's score"""
     write(team1scoreF, score)
-    rprint(f"[magenta]Team 1 Score: [green]{read(team1scoreF)}")
+    rprint(f"{main_colour}Team {t1_colour}1 Score: {arg_colour}{read(team1scoreF)}")
 
 
 @writer.command()
@@ -31,7 +31,7 @@ def t1s(score):
 def t2(name):
     """- change team 2's name"""
     write(team2F, " ".join(name))
-    rprint(f"[magenta] Team 2 Name: [green]{read(team2F)}")
+    rprint(f"{main_colour} Team {t2_colour}2 Name: {arg_colour}{read(team2F)}")
 
 
 @writer.command()
@@ -39,7 +39,7 @@ def t2(name):
 def t2s(score):
     """- change team 2's score"""
     write(team2scoreF, score)
-    rprint(f"[magenta]Team 2 Score: [green]{read(team2scoreF)}")
+    rprint(f"{main_colour}Team {t2_colour}2 Score: {arg_colour}{read(team2scoreF)}")
 
 
 @writer.command()
@@ -47,4 +47,4 @@ def t2s(score):
 def m(match):
     """- change the match name"""
     write(matchN, " ".join(match))
-    rprint(f"[magenta]Match Name: [green]{read(matchN)}")
+    rprint(f"{main_colour}Match Name: {arg_colour}{read(matchN)}")

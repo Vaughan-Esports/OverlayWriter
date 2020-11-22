@@ -1,5 +1,5 @@
 from files import *
-from paths import *
+from config import *
 import click
 
 
