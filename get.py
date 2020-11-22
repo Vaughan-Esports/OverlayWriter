@@ -9,11 +9,11 @@ import click
 def get(ctx):
     """- get the contents of file(s)"""
     if ctx.invoked_subcommand is None:
-        rprint(f"{main_colour}Match Name: [green]{read(matchN)}")
-        rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Name: {arg_colour}{read(team1F)}")
-        rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Score: {arg_colour}{read(team1scoreF)}")
-        rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Name: {arg_colour}{read(team2F)}")
-        rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Score: {arg_colour}{read(team2scoreF)}")
+        ctx.invoke(match)
+        ctx.invoke(t1)
+        ctx.invoke(t1s)
+        ctx.invoke(t2)
+        ctx.invoke(t2s)
 
 
 @get.command()
@@ -41,20 +41,22 @@ def t2s():
 
 
 @get.command()
-def m():
+def match():
     """- print the match name"""
     rprint(f"{main_colour}Match Name: [green]{read(matchN)}")
 
 
 @get.command()
-def teams():
+@click.pass_context
+def teams(ctx):
     """- print both team's names"""
-    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Name: {arg_colour}{read(team1F)}")
-    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Name: {arg_colour}{read(team2F)}")
+    ctx.invoke(t1)
+    ctx.invoke(t2)
 
 
 @get.command()
-def scores():
+@click.pass_context
+def scores(ctx):
     """- print both team's scores"""
-    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Score: {arg_colour}{read(team1scoreF)}")
-    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Score: {arg_colour}{read(team2scoreF)}")
+    ctx.invoke(t1s)
+    ctx.invoke(t2s)

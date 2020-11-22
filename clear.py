@@ -9,12 +9,11 @@ import click
 def clear(ctx):
     """- clear file(s)"""
     if ctx.invoked_subcommand is None:
-        write(team1F, "")
-        write(team2F, "")
-        write(team1scoreF, "")
-        write(team2scoreF, "")
-        write(matchN, "")
-        rprint(f"{main_colour}Cleared all files.")
+        ctx.invoke(t1)
+        ctx.invoke(t1s)
+        ctx.invoke(t2)
+        ctx.invoke(t2s)
+        ctx.invoke(match)
 
 
 @clear.command()
@@ -46,7 +45,7 @@ def t2s():
 
 
 @clear.command()
-def m():
+def match():
     """- clear match name"""
     write(matchN, "")
     rprint(f"{main_colour}Cleared match name.")
