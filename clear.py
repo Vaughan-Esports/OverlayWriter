@@ -5,7 +5,7 @@ import click
 
 @click.group(invoke_without_command=True)
 @click.pass_context
-def c(ctx):
+def clear(ctx):
     """- clear file(s)"""
     if ctx.invoked_subcommand is None:
         write(team1F, "")
@@ -16,35 +16,35 @@ def c(ctx):
         click.echo('Cleared all files')
 
 
-@c.command()
+@clear.command()
 def t1():
     """- clear team 1's name"""
     write(team1F, "")
     click.echo('Cleared team 1\'s name')
 
 
-@c.command()
+@clear.command()
 def t1s():
     """- clear team 1's score"""
     write(team1scoreF, "")
     click.echo('Cleared team 1\'s score')
 
 
-@c.command()
+@clear.command()
 def t2():
     """- clear team 2's name"""
     write(team2F, "")
     click.echo('Cleared team 2\' name')
 
 
-@c.command()
+@clear.command()
 def t2s():
     """- clear team 2's score"""
     write(team2scoreF, "")
     click.echo('Cleared team 2\'s score')
 
 
-@c.command()
+@clear.command()
 def m():
     """- clear match name"""
     write(matchN, "")

@@ -4,12 +4,12 @@ import click
 
 
 @click.group()
-def w():
+def writer():
     """- write to file(s)"""
     pass
 
 
-@w.command()
+@writer.command()
 @click.argument('name')
 def t1(name):
     """- change team 1's name"""
@@ -17,7 +17,7 @@ def t1(name):
     click.echo("Team 1 Name: " + read(team1F))
 
 
-@w.command()
+@writer.command()
 @click.argument('score')
 def t1s(score):
     """- change team 1's score"""
@@ -25,7 +25,7 @@ def t1s(score):
     click.echo("Team 1 Score: " + read(team1scoreF))
 
 
-@w.command()
+@writer.command()
 @click.argument('name')
 def t2(name):
     """- change team 2's name"""
@@ -33,7 +33,7 @@ def t2(name):
     click.echo("Team 2 Name: " + read(team2F))
 
 
-@w.command()
+@writer.command()
 @click.argument('score')
 def t2s(score):
     """- change team 2's score"""
@@ -41,7 +41,7 @@ def t2s(score):
     click.echo("Team 2 Score: " + read(team2scoreF))
 
 
-@w.command()
+@writer.command()
 @click.argument('match')
 def m(match):
     """- change the match name"""

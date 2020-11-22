@@ -17,9 +17,9 @@ def cli():
     pass
 
 
-cli.add_command(g)
-cli.add_command(c)
-cli.add_command(s)
-cli.add_command(w)
+cli.add_command(get)
+cli.add_command(clear)
+cli.add_command(swap)
+cli.add_command(writer)
 
 cli()

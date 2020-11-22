@@ -5,7 +5,7 @@ import click
 
 @click.group(invoke_without_command=True)
 @click.pass_context
-def s(ctx):
+def swap(ctx):
     """- swap the text in file(s)"""
     if ctx.invoked_subcommand is None:
         team1_name = read(team1F)
@@ -18,7 +18,7 @@ def s(ctx):
         write(team2scoreF, team1_score)
 
 
-@s.command()
+@swap.command()
 def teams():
     """- swap team names"""
     team1_name = read(team1F)
@@ -27,7 +27,7 @@ def teams():
     write(team2F, team1_name)
 
 
-@s.command()
+@swap.command()
 def scores():
     """- swap team scores"""
     team1_score = read(team1scoreF)
