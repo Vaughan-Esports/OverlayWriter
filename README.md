@@ -1,13 +1,13 @@
 # OverlayWriter
 Command line interface to edit text files for OBS/SLOBS overlays.
 
-Currently designed directly for [Vaughan Esports'](https://vaughanesports.org) overlays.
+Currently designed directly for [Vaughan Esport's](https://vaughanesports.org) overlays.
 
 ## Features
-- `writer` - write to different files quickly
-- `clear` - clear different files quickly
-- `set` - swap the names and/or scores for team 1 and 2
-- `get` - get the names/scores of the teams and match
+- `set` - overwrites current values in the files
+- `clear` - clears the files
+- `set` - swaps the names and/or scores for team 1 and 2
+- `get` - returns the names/scores of the teams and match
 
 ## Using Overlay Writer
 ### Setup
@@ -20,9 +20,20 @@ Currently designed directly for [Vaughan Esports'](https://vaughanesports.org) o
 
 
 ### Example Usage
-To change team 1's name to "The Better Team":  `ow w t1 "The Better Team"`
+To change team 1's name to "The Better Team":  `ow set t1 The Better Team`
 
 Run `ow --help` to see all commands and `ow {command} --help` to see sub commands.
 
-## To-Do
-- [ ] Ability to change paths to text files
+
+## Configuration
+### File Paths
+All paths to the text files are found in `config.py`
+
+Simply change the desired relative path to your desired path for the file.
+
+### Console Colours
+All console colours are set in `config.py`
+
+Simply change the name of the colours in the square brackets.
+
+List of colours [here](https://rich.readthedocs.io/en/latest/appendix/colors.html?highlight=colors)
