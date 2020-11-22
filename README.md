@@ -4,10 +4,10 @@ Command line interface to edit text files for OBS/SLOBS overlays.
 Currently designed directly for [Vaughan Esports'](https://vaughanesports.org) overlays.
 
 ## Features
-- `w` - write to different files quickly
-- `c` - clear different files quickly
-- `s` - swap the names and/or scores for team 1 and 2
-- `g` - get the names/scores of the teams and match
+- `writer` - write to different files quickly
+- `clear` - clear different files quickly
+- `set` - swap the names and/or scores for team 1 and 2
+- `get` - get the names/scores of the teams and match
 
 ## Using Overlay Writer
 ### Setup
