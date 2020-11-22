@@ -43,8 +43,8 @@ def t2s(score):
 
 
 @set.command()
-@click.argument('match')
-def m(match):
+@click.argument('match_name', nargs=-1)
+def match(match_name):
     """- change the match name"""
-    write(matchN, " ".join(match))
+    write(matchN, " ".join(match_name))
     rprint(f"{main_colour}Match Name: {arg_colour}{read(matchN)}")
