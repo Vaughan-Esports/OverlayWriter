@@ -1,5 +1,6 @@
 from files import *
 from config import *
+from rich import print as rprint
 import click
 
 
@@ -19,6 +20,7 @@ def teams():
     team2_name = read(team2F)
     write(team1F, team2_name)
     write(team2F, team1_name)
+    rprint(f"{main_colour}Swapped team names.")
 
 
 @swap.command()
@@ -28,3 +30,4 @@ def scores():
     team2_score = read(team2scoreF)
     write(team1scoreF, team2_score)
     write(team2scoreF, team1_score)
+    rprint(f"{main_colour}Swapped team scores.")
