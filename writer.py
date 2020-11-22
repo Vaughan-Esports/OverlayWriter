@@ -15,7 +15,7 @@ def set():
 def t1(name):
     """- change team 1's name"""
     write(team1F, " ".join(name))
-    rprint(f"{main_colour}Team {t1_colour}1 Name: {arg_colour}{read(team1F)}")
+    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Name: {arg_colour}{read(team1F)}")
 
 
 @set.command()
@@ -23,7 +23,7 @@ def t1(name):
 def t1s(score):
     """- change team 1's score"""
     write(team1scoreF, score)
-    rprint(f"{main_colour}Team {t1_colour}1 Score: {arg_colour}{read(team1scoreF)}")
+    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Score: {arg_colour}{read(team1scoreF)}")
 
 
 @set.command()
@@ -31,7 +31,7 @@ def t1s(score):
 def t2(name):
     """- change team 2's name"""
     write(team2F, " ".join(name))
-    rprint(f"{main_colour} Team {t2_colour}2 Name: {arg_colour}{read(team2F)}")
+    rprint(f"{main_colour} Team {t2_colour}2 {main_colour}Name: {arg_colour}{read(team2F)}")
 
 
 @set.command()
@@ -39,7 +39,7 @@ def t2(name):
 def t2s(score):
     """- change team 2's score"""
     write(team2scoreF, score)
-    rprint(f"{main_colour}Team {t2_colour}2 Score: {arg_colour}{read(team2scoreF)}")
+    rprint(f"{main_colour}Team {t2_colour}2{main_colour} Score: {arg_colour}{read(team2scoreF)}")
 
 
 @set.command()
