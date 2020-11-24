@@ -1,5 +1,5 @@
 from get import *
-from writer import *
+from set import *
 from clear import *
 from swap import *
 import click

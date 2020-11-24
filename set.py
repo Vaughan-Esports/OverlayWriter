@@ -31,7 +31,7 @@ def t1s(score):
 def t2(name):
     """- change team 2's name"""
     write(team2F, " ".join(name))
-    rprint(f"{main_colour} Team {t2_colour}2 {main_colour}Name: {arg_colour}{read(team2F)}")
+    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Name: {arg_colour}{read(team2F)}")
 
 
 @set.command()

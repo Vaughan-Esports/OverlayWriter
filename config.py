@@ -7,6 +7,6 @@ matchN = "textFiles/match.txt"
 
 # default colours
 main_colour = "[magenta]"
-t1_colour = "[bright_cyan   ]"
+t1_colour = "[bright_cyan]"
 t2_colour = "[orange1]"
 arg_colour = "[green]"
