@@ -14,7 +14,8 @@ Currently designed directly for [Vaughan Esport's](https://vaughanesports.org) o
 1. Clone this repo
 2. In OBS/SLOBS select the `read from file` option for texts and select the appropriate file under the `textFiles` directory
 3. Navigate to the directory in your terminal
-4. Edit your overlay away!
+4. Install requirements using `pip install -r requirements.txt`
+5. Edit your overlay away!
 
 **Tip:** Use the `custom extents` checkbox in the properties of text sources to center the text on your overlay at all times
 
