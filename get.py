@@ -19,25 +19,29 @@ def get(ctx):
 @get.command()
 def t1():
     """- print team 1's name"""
-    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Name: {arg_colour}{read(team1F)}")
+    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Name: {arg_colour}"
+           f"{read(team1F)}")
 
 
 @get.command()
 def t1s():
     """- print team 1's score"""
-    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Score: {arg_colour}{read(team1scoreF)}")
+    rprint(f"{main_colour}Team {t1_colour}1 {main_colour}Score: {arg_colour}"
+           f"{read(team1scoreF)}")
 
 
 @get.command()
 def t2():
     """- print team 2's name"""
-    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Name: {arg_colour}{read(team2F)}")
+    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Name: {arg_colour}"
+           f"{read(team2F)}")
 
 
 @get.command()
 def t2s():
     """- print team 2's score"""
-    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Score: {arg_colour}{read(team2scoreF)}")
+    rprint(f"{main_colour}Team {t2_colour}2 {main_colour}Score: {arg_colour}"
+           f"{read(team2scoreF)}")
 
 
 @get.command()

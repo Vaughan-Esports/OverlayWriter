@@ -59,7 +59,8 @@ def scores(ctx, default):
     if default:
         write(team1scoreF, "0")
         write(team2scoreF, "0")
-        rprint(f"{main_colour}Set team {t1_colour}1 {main_colour}and {t2_colour}2 {main_colour}scores to {arg_colour}0")
+        rprint(f"{main_colour}Set team {t1_colour}1 {main_colour}and "
+               f"{t2_colour}2 {main_colour}scores to {arg_colour}0")
     else:
         ctx.invoke(t1s)
         ctx.invoke(t2s)
