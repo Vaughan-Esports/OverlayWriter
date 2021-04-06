@@ -52,3 +52,11 @@ def match(match_name):
     """- change the match name"""
     write(matchN, " ".join(match_name))
     rprint(f"{main_colour}Match Name: {arg_colour}{read(matchN)}")
+
+
+@set.command()
+@click.argument('winner_name', nargs=-1)
+def winner(winner_name):
+    """- change the winner name"""
+    write(winnerN, " ".join(winner_name))
+    rprint(f"{main_colour}Winner: {arg_colour}{read(winnerN)}")

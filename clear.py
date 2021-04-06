@@ -14,6 +14,7 @@ def clear(ctx):
         ctx.invoke(t2)
         ctx.invoke(t2s)
         ctx.invoke(match)
+        ctx.invoke(winner)
 
 
 @clear.command()
@@ -49,6 +50,13 @@ def match():
     """- clear match name"""
     write(matchN, "")
     rprint(f"{main_colour}Cleared match name.")
+
+
+@clear.command()
+def winner():
+    """- clear the winner name"""
+    write(winnerN, "")
+    rprint(f"{main_colour}Cleared the winner name.")
 
 
 @clear.command()

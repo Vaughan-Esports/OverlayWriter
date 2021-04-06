@@ -10,6 +10,7 @@ def get(ctx):
     """- get the contents of file(s)"""
     if ctx.invoked_subcommand is None:
         ctx.invoke(match)
+        ctx.invoke(winner)
         ctx.invoke(t1)
         ctx.invoke(t1s)
         ctx.invoke(t2)
@@ -48,6 +49,12 @@ def t2s():
 def match():
     """- print the match name"""
     rprint(f"{main_colour}Match Name: [green]{read(matchN)}")
+
+
+@get.command()
+def winner():
+    """- print the winner name"""
+    rprint(f"{main_colour}Winner: [green]{read(winnerN)}")
 
 
 @get.command()
